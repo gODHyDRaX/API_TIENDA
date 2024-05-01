@@ -1,0 +1,10 @@
+.nav span{
+    font-size: 4rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.nav span:hover{
+    transition: 0.3s ease;
+    color: #006977;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

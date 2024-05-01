@@ -1,0 +1,97 @@
+.tarjeta{
+    margin: auto;
+    display: grid;
+    width: 80%;
+    height: 100%;   
+    grid-template-rows: 4rem 4rem 4rem 4rem 2rem 4rem;
+    grid-template-columns: repeat(4,1fr);
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.img{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 4;
+   justify-content: center;
+   align-items: center;
+}
+.img img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.title{
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    font-size:  1.4rem;
+    justify-content: center;
+    align-items: center;
+}
+.price{
+    grid-row-start: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 2rem;
+}
+.botn{
+    width: 100%;
+    height: 70%;
+    margin: auto;
+    display: flex;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    grid-row-start: 6;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    padding: 0.8em 1.8em;
+        border-radius: 8px;
+        background-color: transparent;
+        color: #006977;
+        border: 1px solid #006977;
+        font-size: 16px;
+        cursor: pointer;
+        z-index: 1;
+        transition: 0.3s;
+        overflow: hidden;
+        position: relative;
+    
+}
+.botn::before{
+    content: '';
+        width: 0;
+        height: 600%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transition: 0.4s ease;
+        transform: translate(-50%, -50%) rotate(45deg);
+        display: block;
+        z-index: -1;
+        background-color: #006977;
+}
+.botn:hover::before{
+        width: 105%;
+}
+.botn:hover{
+        color: white;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+.categoria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+border-radius: 8px;
+}
+.categoria:hover{
+    transition: 0.4s ease;
+box-shadow: rgba(0, 105, 119, 0.4) 0px 5px, rgba(0, 105, 119, 0.3) 0px 10px, rgba(0, 105, 119, 0.2) 0px 15px, rgba(0, 105, 119, 0.1) 0px 20px, rgba(0, 105, 119, 0.05) 0px 25px;}
